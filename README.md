@@ -1,53 +1,26 @@
-# Netlify Developer Portfolio Starter (auto-annotated)
 
-![Developer Portfolio](https://assets.stackbit.com/docs/personal-nextjs-starter-thumb.png)
+## Webpage Content Summary
 
-This is a full-fledged portfolio website built with Next.js, Tailwind CSS, [visual editor](https://docs.netlify.com/visual-editor/overview/) and the [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
+The homepage of this portfolio website is structured to provide a comprehensive overview of the developer's profile and work. It includes the following key sections:
 
-The codebase showcases **how to apply annotations at scale**, meaning: how to make much of your components [highlightable in the visual editor](https://docs.netlify.com/visual-editor/visual-editing/inline-editor/) through data attributes without manually adding code throughout the codebase.
+*   **Featured Projects Section**: Showcases a selection of key projects, with options to display descriptions and featured images. A call-to-action links to a dedicated projects page.
+*   **Featured Posts Section**: Highlights recent or important blog posts, including publication dates and excerpts. A link is provided to view all blog posts.
+*   **Contact Section**: A dedicated section for visitors to get in touch, featuring a form with fields for First Name, Last Name, Email, Address, and an option to sign up for updates.
+## Key Highlights
 
-**This is achieved by:**
+*   **Modern Web Technologies**: Built on Next.js for high performance and scalability, with Tailwind CSS for streamlined, utility-first styling.
+*   **Integrated Visual Editing**: Features a seamless integration with a visual editor, enabling real-time content previews and intuitive modifications.
+*   **Git-Powered Content Management**: Leverages a Git Content Source, allowing for efficient and version-controlled content updates directly from your repository.
+*   **Advanced Annotation System**: Demonstrates an innovative "annotation at scale" approach, where components are automatically highlighted within the visual editor via data attributes, significantly reducing manual annotation effort. This system dynamically matches content objects to components during rendering, wrapping them with appropriate annotations.
 
-1. Adding an annotation property to the content objects at they're loaded (see `src/utils/content.ts`)
-1. When rendering the page, each content sub-object is dynamically matched to the appropriate component. At this point, wrap each component with an annotation, based on the abovementioned content property. See `src/components/components-registry.tsx`.
+## Original Developers
 
-**⚡ Demo:** [auto-annotated-portfolio.netlify.app](https://auto-annotated-portfolio.netlify.app)
+This project is based on the "Netlify Developer Portfolio Starter (auto-annotated)" template, originally developed by Netlify. More information can be found at the [Netlify Templates GitHub repository](https://github.com/netlify-templates/auto-annotated-portfolio).
 
-## Deploying to Netlify
+## Getting Started (For Developers)
 
-If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/auto-annotated-portfolio)
-
-## Getting Started
-
-The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
-
-Run the Next.js development server:
-
-```txt
-cd auto-annotated-portfolio
-npm run dev
-```
-
-Install the [Netlify visual editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
-
-```txt
-npm install -g @stackbit/cli
-stackbit dev
-```
-
-This outputs your own Netlify visual editor URL. Open this, register or sign in, and you will be directed to Netlify's visual editor for your new project.
-
-![Next.js Dev + Netlify visual editor dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
-
-## Next Steps
-
-Here are a few suggestions on what to do next if you're new to Netlify Visual Editor:
-
-- Learn [how Netlify Visual Editor works](https://docs.netlify.com/visual-editor/overview/)
-- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
+For those looking to deploy or contribute to this project, detailed instructions are available in the full `README.md` file within the repository. This includes steps for local development, running the Next.js server, and utilizing the Netlify Visual Editor CLI.
 
 ## Support
 
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+For assistance or further inquiries, please refer to the original project's support channels, typically found in the comprehensive documentation or community forums.
