@@ -2,6 +2,7 @@
 ## Webpage Content Summary
 
 The homepage of this portfolio website is structured to provide a comprehensive overview of the developer's profile and work. It includes the following key sections:
+!image["https://imgur.com/a/0BjBDLx"]
 
 *   **Featured Projects Section**: Showcases a selection of key projects, with options to display descriptions and featured images. A call-to-action links to a dedicated projects page.
 *   **Featured Posts Section**: Highlights recent or important blog posts, including publication dates and excerpts. A link is provided to view all blog posts.
@@ -21,4 +22,5 @@ This project is based on the "Netlify Developer Portfolio Starter (auto-annotate
 ## Support
 
 For assistance or further inquiries, please refer to the original project's support channels, typically found in the comprehensive documentation or community forums.
+
 
