@@ -17,10 +17,8 @@ The homepage of this portfolio website is structured to provide a comprehensive 
 
 This project is based on the "Netlify Developer Portfolio Starter (auto-annotated)" template, originally developed by Netlify. More information can be found at the [Netlify Templates GitHub repository](https://github.com/netlify-templates/auto-annotated-portfolio).
 
-## Getting Started (For Developers)
-
-For those looking to deploy or contribute to this project, detailed instructions are available in the full `README.md` file within the repository. This includes steps for local development, running the Next.js server, and utilizing the Netlify Visual Editor CLI.
 
 ## Support
 
 For assistance or further inquiries, please refer to the original project's support channels, typically found in the comprehensive documentation or community forums.
+
