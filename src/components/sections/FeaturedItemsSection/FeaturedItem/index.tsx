@@ -17,7 +17,7 @@ export default function FeaturedItem(props) {
                 id={elementId || null}
                 className={classNames('overflow-hidden', mapStyles(otherSelfStyles))}
                 style={{
-                    borderWidth: borderWidth ? `${borderWidth}px` : null
+                    borderWidth: borderWidth ? `${borderWidth}px` : undefined
                 }}
             >
                 {featuredImage && (

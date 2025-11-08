@@ -39,8 +39,8 @@ export default function FeaturedItemsSection(props) {
                         'mt-12': title || subtitle
                     })}
                     style={{
-                        columnGap: spacingX ? `${spacingX}px` : null,
-                        rowGap: spacingY ? `${spacingY}px` : null
+                        columnGap: spacingX ? `${spacingX}px` : undefined,
+                        rowGap: spacingY ? `${spacingY}px` : undefined
                     }}
                 >
                     {items.map((item, index) => (

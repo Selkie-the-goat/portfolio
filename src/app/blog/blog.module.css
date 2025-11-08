@@ -1,0 +1,131 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* Home Button */
+.nav {
+  margin-bottom: 2rem;
+}
+
+.homeButton {
+  display: inline-block;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.homeButton:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+/* Header Text */
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.subheading {
+  color: var(--accent-gray);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Empty state */
+.noArticles {
+  color: var(--accent-gray);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Card Grid Layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Blog post card */
+.card {
+  background-color: var(--bg-surface);
+  border-radius: 12px;
+  padding: 1.8rem;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.85);
+}
+
+/* Title link */
+.titleLink {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.3rem;
+  transition: 0.25s;
+}
+
+.titleLink:hover .title {
+  color: var(--hover-blue);
+}
+
+/* Meta text */
+.meta {
+  color: var(--accent-gray);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Markdown excerpt display */
+.excerpt p {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Read more button */
+.readMore {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent-blue);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.readMore:hover {
+  color: var(--hover-blue);
+}
+
+/* Responsive scaling */
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .title {
+    font-size: 1.45rem;
+  }
+}

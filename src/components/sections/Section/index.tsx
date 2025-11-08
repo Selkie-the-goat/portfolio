@@ -23,7 +23,7 @@ export default function Section(props: SectionProps) {
 function SectionInset(props: SectionProps) {
     const { elementId, colors = 'colors-f', styles = {}, children } = props;
     return (
-        <div id={elementId || null} className={classNames('flex justify-center', styles.margin)}>
+        <div id={elementId || undefined} className={classNames('flex justify-center', styles.margin)}>
             <div
                 className={classNames(
                     'flex flex-col items-center justify-center relative w-full',
@@ -35,7 +35,7 @@ function SectionInset(props: SectionProps) {
                     styles.borderRadius ? mapStyles({ borderRadius: styles.borderRadius }) : null
                 )}
                 style={{
-                    borderWidth: styles.borderWidth ? `${styles.borderWidth}px` : null
+                    borderWidth: styles.borderWidth ? `${styles.borderWidth}px` : undefined
                 }}
                 data-theme={colors}
             >
@@ -50,7 +50,7 @@ function SectionFullWidth(props: SectionProps) {
     return (
         <div
             data-theme={colors}
-            id={elementId || null}
+            id={elementId || undefined}
             className={classNames(
                 'flex flex-col justify-center items-center',
                 mapStyles({ height: styles.height ?? 'auto' }),
@@ -61,7 +61,7 @@ function SectionFullWidth(props: SectionProps) {
                 styles.borderRadius ? mapStyles({ borderRadius: styles.borderRadius }) : null
             )}
             style={{
-                borderWidth: styles.borderWidth ? `${styles.borderWidth}px` : null
+                borderWidth: styles.borderWidth ? `${styles.borderWidth}px` : undefined
             }}
         >
             <div className={classNames('w-full', mapStyles({ width: styles.width ?? 'wide' }))}>{children}</div>

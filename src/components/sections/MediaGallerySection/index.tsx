@@ -54,8 +54,8 @@ export default function MediaGallerySection(props: MediaGallerySectionProps) {
                         <MediaGalleryImage
                             key={index}
                             image={image}
-                            showCaption={showCaption}
-                            enableHover={enableHover}
+                            showCaption={showCaption ?? false}
+                            enableHover={enableHover ?? false}
                             aspectRatio={aspectRatio}
                         />
                     ))}

@@ -2,42 +2,6 @@ import classNames from 'classnames';
 
 import getVideoData from '@/utils/get-video-data';
 
-const videoServiceMap = {
-    youtube: YouTubeVideo,
-    vimeo: VimeoVideo,
-    custom: SelfHostedVideo
-};
-
-export default function VideoBlock(props) {
-    const { elementId, className, url, aspectRatio = '16:9', autoplay, loop, muted, controls = true } = props;
-    if (!url) {
-        return null;
-    }
-    const videoData = getVideoData(url);
-    const VideoComponent = videoServiceMap[videoData.service];
-    return (
-        <div
-            id={elementId || null}
-            className={classNames(
-                'w-full relative overflow-hidden',
-                {
-                    'aspect-4/3': aspectRatio === '4:3',
-                    'aspect-video': aspectRatio === '16:9'
-                },
-                className
-            )}
-        >
-            {videoData.id && VideoComponent ? (
-                <VideoComponent id={videoData.id} autoplay={autoplay} loop={loop} muted={muted} controls={controls} />
-            ) : (
-                <p className="absolute left-0 w-full italic text-center -translate-y-1/2 top-1/2">
-                    Video URL is not supported.
-                </p>
-            )}
-        </div>
-    );
-}
-
 function YouTubeVideo({ id, autoplay, loop, muted, controls }) {
     const paramsObj: any = {};
     paramsObj.autoplay = autoplay ? '1' : '0';
@@ -90,3 +54,9 @@ function SelfHostedVideo({ id, autoplay, loop, muted, controls }) {
         </video>
     );
 }
+
+const videoServiceMap = {
+    youtube: YouTubeVideo,
+    vimeo: VimeoVideo,
+    custom: SelfHostedVideo
+};

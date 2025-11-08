@@ -10,14 +10,14 @@ type LinkProps = RegularLinkProps | (Omit<RegularLinkProps, 'href'> & { href: Pa
 
 const Link: React.FC<LinkProps> = (props) => {
     const { children, href: hrefArgument, ...other } = props;
-    let hrefString: string = null;
-    let hrefContent: ContentObject = null;
+    let hrefString: string = '';
+    let hrefContent: ContentObject | null = null;
 
     if (typeof hrefArgument === 'string') {
         hrefString = hrefArgument;
     } else {
         hrefContent = hrefArgument;
-        hrefString = hrefArgument.__metadata.urlPath;
+        hrefString = hrefArgument.__metadata.urlPath || '';
     }
 
     // Pass Any internal link to Next.js Link, for anything else, use <a> tag

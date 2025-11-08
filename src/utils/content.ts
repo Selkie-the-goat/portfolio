@@ -5,14 +5,14 @@ import frontmatter from 'front-matter';
 import { allModels } from '.stackbit/models';
 import * as types from '@/types';
 import { isDev } from './common';
-import { PAGE_MODEL_NAMES, PageModelType } from '@/types/generated';
+import { ContentObject, PAGE_MODEL_NAMES, PageModelType } from '@/types/generated';
 
 const contentBaseDir = 'content';
 const pagesBaseDir = contentBaseDir + '/pages';
 
 const allReferenceFields = {};
 allModels.forEach((model) => {
-    model.fields.forEach((field) => {
+    model.fields?.forEach((field) => {
         if (field.type === 'reference' || (field.type === 'list' && field.items?.type === 'reference')) {
             allReferenceFields[model.name + ':' + field.name] = true;
         }
@@ -29,9 +29,9 @@ function contentFilesInPath(dir: string) {
     return glob.sync(globPattern);
 }
 
-function readContent(file: string): types.ContentObject {
+export function readContent(file: string): ContentObject | null {
     const rawContent = fs.readFileSync(file, 'utf8');
-    let content = null;
+    let content: Record<string, any> | null = null;
     switch (path.extname(file).substring(1)) {
         case 'md':
             const parsedMd = frontmatter<Record<string, any>>(rawContent);
@@ -47,12 +47,15 @@ function readContent(file: string): types.ContentObject {
             throw Error(`Unhandled file type: ${file}`);
     }
 
+    if (!content) {
+        return null;
+    }
     content.__metadata = {
         id: file,
         modelName: content.type
     };
 
-    return content;
+    return content as ContentObject;
 }
 
 function resolveReferences(content: types.ContentObject, fileToContent: Record<string, types.ContentObject>) {
@@ -89,6 +92,9 @@ function resolveReferences(content: types.ContentObject, fileToContent: Record<s
 
 function contentUrl(obj: types.ContentObject) {
     const fileName = obj.__metadata.id;
+    if (!fileName) {
+        return undefined;
+    }
     if (!fileName.startsWith(pagesBaseDir)) {
         console.warn('Content file', fileName, 'expected to be a page, but is not under', pagesBaseDir);
         return;
@@ -103,7 +109,7 @@ function contentUrl(obj: types.ContentObject) {
 }
 
 export function allContent(): types.ContentObject[] {
-    let objects = contentFilesInPath(contentBaseDir).map((file) => readContent(file));
+    let objects = contentFilesInPath(contentBaseDir).map((file) => readContent(file)).filter(Boolean) as ContentObject[];
 
     allPages(objects).forEach((obj) => {
         obj.__metadata.urlPath = contentUrl(obj);

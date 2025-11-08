@@ -4,13 +4,13 @@
     "header": {
         "type": "Header",
         "headerVariant": "variant-c",
-        "isSticky": false,
-        "title": "Personal",
+        "isSticky": true,
+        "title": "Neekson Shrestha",
         "isTitleVisible": true,
         "primaryLinks": [
             {
                 "type": "Link",
-                "label": "Info",
+                "label": "About",
                 "url": "/info"
             },
             {
@@ -27,17 +27,17 @@
         "socialLinks": [
             {
                 "type": "Social",
-                "altText": "Twitter",
-                "label": "Twitter",
-                "url": "https://twitter.com/netlify",
-                "icon": "twitter"
+                "altText": "GitHub",
+                "label": "GitHub",
+                "url": "https://github.com/Selkie-the-goat/",
+                "icon": "github"
             },
             {
                 "type": "Social",
-                "altText": "GitHub",
-                "label": "GitHub",
-                "url": "https://github.com/netlify-templates",
-                "icon": "github"
+                "altText": "Discord",
+                "label": "Discord",
+                "url": "https://discord.com/users/709233878987964436",
+                "icon": "discord"
             }
         ],
         "styles": {
@@ -51,14 +51,14 @@
         "primaryLinks": [
             {
                 "type": "Link",
-                "label": "Info",
+                "label": "About",
                 "url": "/info",
                 "altText": ""
             },
             {
                 "type": "Link",
-                "label": "Contact",
-                "url": "mailto:thisismyemail.@myemail.me",
+                "label": "Projects",
+                "url": "/projects",
                 "altText": ""
             },
             {
@@ -70,21 +70,21 @@
             {
                 "type": "Link",
                 "label": "GitHub",
-                "url": "https://github.com/netlify-templates",
-                "altText": "Netlify templates"
+                "url": "https://github.com/Selkie-the-goat/",
+                "altText": "GitHub Profile"
             }
         ],
         "contacts": {
             "type": "ContactBlock",
-            "title": "Contact details",
-            "phoneNumber": "850-123-5021",
-            "phoneAltText": "My phone number",
-            "email": "thisismyemail.@myemail.me",
-            "emailAltText": "My email",
-            "address": "312 Lovely Street, Brooklyn, NY, 123456",
-            "addressAltText": "My address"
+            "title": "Let's Connect",
+            "phoneNumber": "",
+            "phoneAltText": "",
+            "email": "info@neeksonshrestha.com.np",
+            "emailAltText": "Email me",
+            "address": "Nepal",
+            "addressAltText": "Location"
         },
-        "copyrightText": "Powered by [Netlify](https://www.netlify.com/)",
+        "copyrightText": "© 2024 Neekson Shrestha. All rights reserved.",
         "styles": {
             "self": {
                 "width": "narrow",
