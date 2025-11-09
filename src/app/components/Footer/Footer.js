@@ -35,7 +35,7 @@ export default function Footer() {
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/neekson-shrestha-13691b334/',
+      url: 'https://www.linkedin.com/in/neeksonshrestha/',
       icon: <FaLinkedin />
     }
   ];
