@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import styles from './Footer.module.css';
-import { FaGithub, FaDiscord, FaArrowUp, FaCode } from 'react-icons/fa';
+import { FaGithub, FaDiscord, FaArrowUp, FaCode, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -25,13 +25,18 @@ export default function Footer() {
     },
     {
       name: 'Codeforces',
-      url: 'https://codeforces.com/profile/cooked',
+      url: 'https://codeforces.com/profile/cooked.',
       icon: <FaCode />
     },
     {
       name: 'Discord',
       url: 'https://discord.com/users/709233878987964436',
       icon: <FaDiscord />
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/neekson-shrestha-13691b334/',
+      icon: <FaLinkedin />
     }
   ];
 
