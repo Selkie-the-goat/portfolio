@@ -29,52 +29,52 @@ export default function Skills() {
   }, []);
 
   const skillCategories = [
-    {
-      category: 'Programming Languages',
-      skills: [
-        { name: 'Python', level: 85 },
-        { name: 'JavaScript/TypeScript', level: 72 },
-        { name: 'C++', level: 85 },
-        { name: 'C', level: 95 },
-      ]
-    },
-    {
-      category: 'Web Development',
-      skills: [
-        { name: 'React.js', level: 72 },
-        { name: 'Next.js', level: 64 },
-        { name: 'HTML/CSS', level: 90 },
-        { name: 'Node.js', level: 60 },
-      ]
-    },
-    {
-      category: 'Specialized Skills',
-      skills: [
-        { name: 'Babylon.js', level: 48 },
-        { name: 'Cesium.js', level: 48 },
-        { name: '3D Visualization', level: 56 },
-        { name: 'Geospatial Viz', level: 52 },
-      ]
-    },
-    {
-      category: 'Mathematics & Problem Solving',
-      skills: [
-        { name: 'Geometry', level: 72 },
-        { name: 'Number Theory', level: 60 },
-        { name: 'Algorithms', level: 68 },
-        { name: 'Data Structures', level: 68 },
-      ]
-    },
-    {
-      category: 'Tools & Technologies',
-      skills: [
-        { name: 'Git/GitHub', level: 68 },
-        { name: 'VS Code', level: 72 },
-        { name: 'Linux/CLI', level: 64 },
-        { name: 'Docker', level: 52 },
-      ]
-    }
-  ];
+  {
+    category: 'Programming Languages',
+    skills: [
+      { name: 'Python', level: 70 },
+      { name: 'JavaScript/TypeScript', level: 55 },
+      { name: 'C++', level: 85 },       // unchanged
+      { name: 'C', level: 50 },
+    ]
+  },
+  {
+    category: 'Web Development',
+    skills: [
+      { name: 'React.js', level: 50 },
+      { name: 'Next.js', level: 45 },
+      { name: 'HTML/CSS', level: 65 },
+      { name: 'Node.js', level: 40 },
+    ]
+  },
+  {
+    category: 'Specialized Skills',
+    skills: [
+      { name: 'Babylon.js', level: 35 },
+      { name: 'Cesium.js', level: 30 },
+      { name: '3D Visualization', level: 40 },
+      { name: 'Geospatial Viz', level: 35 },
+    ]
+  },
+  {
+    category: 'Mathematics & Problem Solving',
+    skills: [
+      { name: 'Geometry', level: 60 },
+      { name: 'Number Theory', level: 55 },
+      { name: 'Algorithms', level: 58 },
+      { name: 'Data Structures', level: 58 },
+    ]
+  },
+  {
+    category: 'Tools & Technologies',
+    skills: [
+      { name: 'Git/GitHub', level: 55 },
+      { name: 'VS Code', level: 65 },
+      { name: 'Linux/CLI', level: 50 },
+      { name: 'Docker', level: 30 },
+    ]
+  }
+];
 
   return (
     <section id="skills" className={styles.skills} ref={sectionRef}>
