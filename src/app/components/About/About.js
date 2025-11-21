@@ -49,20 +49,21 @@ export default function About() {
       title: 'Awards & Certifications',
       items: [
         'National AI Olympiad - Honorable Mention',
-        'Codeforces - 1200+ rated',
+        'Codeforces - 1700+ rated "Expert"',
         'ICSC Finalist',
-        'National Hackathon - 2nd Runner-up',
-        'CS50 by Harvard'
+        'National Level Hackathon - 2nd Runner-up',
       ]
     },
     {
       icon: <FaHeart />,
       title: 'Personal Interests',
       items: [
-        'Mathematics (Geometry, Number Theory)',
-        'Abstract concepts and patterns',
-        'Music and structure',
-        'Clear, elegant problem-solving'
+        'Mathematics (Number Theroy and Calculus)',
+        'Abstract Concepts and Patterns',
+        'Learning about AI',
+        'Music',
+        'Problem-Solving',
+        'Gaming'
       ]
     }
   ];
@@ -78,12 +79,12 @@ export default function About() {
           <p>
             Hi, I'm Neekson Shrestha, a student and aspiring developer from Nepal with a strong 
             interest in mathematics and modern software development. I enjoy exploring clear and 
-            elegant problem-solving approaches, especially in geometry and number theory.
+            elegant problem-solving approaches, especially in calculus and number theory.
           </p>
           <p>
-            I work with Python, C, C++, React.js, and Next.js, and I've also explored Babylon.js 
+            I am able to work with Python, C, C++, React.js, and Next.js, and I've also explored Babylon.js 
             and Cesium.js for 3D and geospatial visualization. I'm currently developing my skills 
-            in web and GUI development, while continuing to learn at my own pace.
+            in Data Structures and Algorithms, while continuing to learn at my own pace.
           </p>
           <p>
             I value simplicity, thoughtful learning, and steady improvement — always working to 
